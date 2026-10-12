@@ -1,0 +1,208 @@
+body{
+    background-color: rgba(181, 171, 171, 1);
+}
+
+main{
+    justify-self: center;
+    justify-items: center;
+    margin-top: 5vh;
+    border-radius: 30px;
+    background-color: white;
+    width: 457px;
+    max-width: 90%;
+    min-height: 35vh;
+    height: auto;
+    padding: 15px;
+    box-shadow: 4px 7px 5px;
+    box-sizing: border-box;
+}
+
+h2{
+    position: relative;
+    right: 95px;
+    top: -23px;
+    font-size: 35px;
+    margin-top: 55px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    position: relative;
+    top: -41px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+input{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 4px;
+    width: 58%;
+    height: 33px;
+    font-size: 18px;
+    margin-left: 8px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+input::placeholder{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    left: 2px;
+}
+
+#btn{
+    position: relative;
+    left: 35px;
+    height: 35px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: rgba(76, 221, 4, 1);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 2px 2px 5px black;
+    transition: transform 0.4s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1, 1.2);
+    background-color: rgb(75, 195, 14);
+    color: rgb(252, 248, 248);
+}
+
+#secao{
+    margin-top: 50px;
+    display: none;
+}
+
+h3{
+    justify-self: center;
+    font-size: 27px;
+    font-style: italic;
+    font-weight: initial;
+}
+
+.linha{
+    width: 427px;   
+    height: 3px;
+    background-color: black;
+}
+
+ul{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0 12px 0 0; 
+    width: 100%;
+    max-height: 253px;
+    overflow-y: auto;
+}
+
+li{
+    position: relative;
+    right: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 4px;
+    width: 50%;
+    padding: 7px;
+    text-decoration: none;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#espaco{
+    position: relative;
+    left: 6px;
+}
+
+#editar, #apagar{
+    height: 32px;
+    width: 93px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px black;
+    position: static;
+    transition: transform 0.4s ease;
+}
+
+#editar{
+    position: relative;
+    left: 4px;
+    background-color: rgb(249, 85, 25);
+}
+
+#apagar{
+    position: relative;
+    left: 19px;
+    background-color: rgba(221, 4, 4, 1);
+}
+
+@media(max-width: 600px){
+    main{
+        width: 352px;
+        min-height: 43vh;
+    }
+
+    h2{
+        position: relative;
+        right: 3%;
+        font-size: 32px;
+    }
+
+    label{
+        font-size: 17px;
+        margin-left: 10%;
+    }
+
+    input{
+        margin-left: 9px;
+        width: 94%;
+        margin-bottom: 28px;
+    }
+
+    #btn{
+        position: relative;
+        left: 32%;
+        top: 10px;
+    }
+
+    .linha{
+        width: 88%;
+        position: relative;
+        left: 6%;
+    }
+
+    li{
+       width: 300px;
+       margin-left: 15px; 
+    }
+
+    #espaco{
+        position: relative;
+        left: 58px;
+        margin-bottom: 25px;
+        justify-items: center;
+    }
+}

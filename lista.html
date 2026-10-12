@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="lista.css">
+    <title>To Do List | Faça uma lista das suas atividades pendentes</title>
+</head>
+<body>
+    <main>
+        <h2 id="titulo">📋 To Do List</h2>
+        <label>Escreva suas atividades pendentes</label>
+            <input id="ipt" type="text" placeholder="Digite aqui...">
+            <button id="btn" onclick="adicionar()">Adicionar</button>
+        <div id="secao">
+          <div class="linha"></div>
+            <h3>Tarefas à Fazer</h3>
+            <ul id="lista"></ul>
+        </div>
+    </main>
+</body>
+    <script src="lista.js"></script>
+</html>
